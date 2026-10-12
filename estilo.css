@@ -4,52 +4,45 @@
   padding: 0;
 }
 
-:root {
-  --verde: #52796f;
-  --verde-oscuro: #354f52;
-  --crema: #faf7f0;
-  --durazno: #f2d0a7;
-  --blanco: #ffffff;
-  --texto: #35413d;
-}
-
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: var(--crema);
-  color: var(--texto);
+  font-family: Arial, sans-serif;
+  background: #fff0f5;
+  color: #444;
   line-height: 1.6;
 }
 
 .encabezado {
-  background: var(--verde);
-  color: var(--blanco);
+  background: linear-gradient(135deg, #ff8fab, #ffb703);
+  color: white;
   text-align: center;
-  padding: 30px 16px 0;
+  padding: 30px 15px;
 }
 
 .encabezado h1 {
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
-  margin-bottom: 5px;
+  font-size: 38px;
+  margin-bottom: 10px;
 }
 
 .encabezado nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
   margin-top: 20px;
 }
 
 .encabezado nav a {
-  color: white;
+  background: #ffffff;
+  color: #e75480;
   text-decoration: none;
-  padding: 12px 18px;
-  border-radius: 8px 8px 0 0;
-  transition: background 0.2s;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-weight: bold;
 }
 
 .encabezado nav a:hover {
-  background: var(--verde-oscuro);
+  background: #ffe066;
+  color: #333;
 }
 
 main {
@@ -60,8 +53,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 35px;
-  padding: 50px 7%;
+  gap: 30px;
+  padding: 45px 7%;
+  background: #ffe5ec;
 }
 
 .bienvenida > div {
@@ -69,13 +63,13 @@ main {
 }
 
 .bienvenida h2 {
-  color: var(--verde-oscuro);
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: #d63384;
+  font-size: 32px;
   margin-bottom: 15px;
 }
 
 .bienvenida p {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .bienvenida img {
@@ -83,34 +77,34 @@ main {
   max-width: 480px;
   height: 320px;
   object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 6px 18px #00000015;
+  border-radius: 25px;
+  border: 6px solid white;
 }
 
 .boton {
   display: inline-block;
-  background: var(--verde);
+  background: #06a77d;
   color: white;
   text-decoration: none;
   padding: 12px 22px;
   border-radius: 25px;
   font-weight: bold;
-  transition: background 0.2s;
 }
 
 .boton:hover {
-  background: var(--verde-oscuro);
+  background: #087f5b;
 }
 
 .contenido {
-  padding: 35px 7%;
+  padding: 40px 7%;
   text-align: center;
+  background: #fff0f5;
 }
 
 .contenido > h2 {
-  color: var(--verde-oscuro);
+  color: #d63384;
+  font-size: 30px;
   margin-bottom: 15px;
-  font-size: 2rem;
 }
 
 .introduccion {
@@ -129,18 +123,14 @@ main {
 .tarjeta {
   background: white;
   padding: 24px;
-  border-radius: 16px;
-  box-shadow: 0 5px 16px #0000000d;
-  transition: transform 0.2s;
-}
-
-.tarjeta:hover {
-  transform: translateY(-4px);
+  border-radius: 20px;
+  border: 3px solid #ffb3c6;
+  box-shadow: 0 5px 15px #d6338420;
 }
 
 .tarjeta h3 {
-  color: var(--verde-oscuro);
-  margin: 12px 0 8px;
+  color: #e75480;
+  margin: 12px 0;
 }
 
 .tarjeta p {
@@ -148,16 +138,16 @@ main {
 }
 
 .tarjeta a {
-  color: var(--verde);
+  color: #008f70;
   font-weight: bold;
 }
 
 .emoji {
-  font-size: 2.7rem;
+  font-size: 45px;
 }
 
 .animal {
-  padding: 0 0 22px;
+  padding-bottom: 22px;
   overflow: hidden;
 }
 
@@ -170,28 +160,26 @@ main {
 
 .animal h3,
 .animal p {
-  margin-left: 18px;
-  margin-right: 18px;
+  margin: 12px 18px;
 }
 
 .etiqueta {
   display: inline-block;
-  color: var(--verde-oscuro);
-  background: #e5eee8;
+  background: #ffe066;
+  color: #754c00;
   border-radius: 20px;
   padding: 5px 12px;
-  font-size: 0.85rem;
 }
 
 .mensaje {
-  background: var(--durazno);
+  background: linear-gradient(135deg, #b8f2e6, #d8f3dc);
   text-align: center;
   padding: 35px 8%;
   margin: 25px 0;
 }
 
 .mensaje h2 {
-  color: var(--verde-oscuro);
+  color: #087f5b;
   margin-bottom: 10px;
 }
 
@@ -205,10 +193,10 @@ main {
 }
 
 footer {
-  background: var(--verde-oscuro);
+  background: #7b2cbf;
   color: white;
   text-align: center;
-  padding: 24px 15px;
+  padding: 25px 15px;
 }
 
 footer p {
@@ -224,18 +212,6 @@ footer p {
   .bienvenida img {
     width: 100%;
     height: 250px;
-  }
-
-  .encabezado nav {
-    gap: 0;
-  }
-
-  .encabezado nav a {
-    padding: 12px;
-  }
-
-  .contenido {
-    padding: 28px 5%;
   }
 
   .tarjetas {
